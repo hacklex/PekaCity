@@ -1,0 +1,54 @@
+﻿<Window x:Class="BattleCityWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BattleCityWpf"
+        xmlns:model="clr-namespace:BattleCityWpf.Model"
+        mc:Ignorable="d"
+        Title="PekaCity" 
+        Icon="/Resources/Player.png"
+        SizeToContent="WidthAndHeight" ResizeMode="CanMinimize"
+        d:DataContext="{d:DesignInstance model:GameField}"
+        d:DesignWidth="640"
+        d:DesignHeight="480">
+    <ItemsControl
+        ItemsSource="{Binding GameObjects}"
+        Width="{Binding Width, Converter={StaticResource CellToScreenConverter}, Mode=OneWay}"
+        Height="{Binding Height, Converter={StaticResource CellToScreenConverter}, Mode=OneWay}">
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <Canvas/>
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.ItemContainerStyle>
+            <Style TargetType="ContentPresenter">
+                <Setter Property="Canvas.Left" Value="{Binding Location.X}"/>
+                <Setter Property="Canvas.Top" Value="{Binding Location.Y}"/>
+            </Style>
+        </ItemsControl.ItemContainerStyle>
+        <ItemsControl.Resources>
+            <DataTemplate DataType="{x:Type model:TerrainTile}">
+                <Image Width="32" Height="32" Source="{Binding Type, Converter={StaticResource TerrainTileConverter}}"/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type model:Player}">
+
+                <Image Width="32" Height="32" Source="Resources/Player.png">
+                    <Image.RenderTransform>
+                        <MatrixTransform Matrix="{Binding Facing, Converter={StaticResource DirectionToMatrixConverter}}"/>
+                    </Image.RenderTransform>
+                </Image>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type model:Tank}">
+                <Grid>
+                    <!--<Rectangle Width="32" Height="32" Fill="Red"></Rectangle>-->
+                    <Image Width="32" Height="32" Source="Resources/Tank.png">
+                        <Image.RenderTransform>
+                            <MatrixTransform Matrix="{Binding Facing, Converter={StaticResource DirectionToMatrixConverter}}"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+            </DataTemplate>
+        </ItemsControl.Resources>
+    </ItemsControl>
+</Window>

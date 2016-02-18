@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BattleCityWpf.Infrastructure.PropertyChangedBase" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\PropertyChangedBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BattleCityWpf.Model.GameObject">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.TerrainTile">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAACAAAAAAABAAAAAAAAAQAAAQAAAAA=</HashCode>
+      <FileName>Model\Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.Apple" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Apple.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.Game">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Model\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.GameBase">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAAAAAAIAABAAAAAIAAgAAAAQAA=</HashCode>
+      <FileName>Model\GameBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.GameField">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEBAAAAAAAAAAAAEgAAEAABAIAAAAAAQAAAAA=</HashCode>
+      <FileName>Model\GameField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.MovingGameObject">
+    <Position X="3.25" Y="4.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAYAAAAAABAEACEAAAIAAEkAAAAAAAAAAI=</HashCode>
+      <FileName>Model\MovingActor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.Player">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleCityWpf.Model.Tank">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="BattleCityWpf.Model.CellLocation">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAkgAAAAAAAAACAAIAAAAAAAAAAYiA=</HashCode>
+      <FileName>Model\CellLocation.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="BattleCityWpf.Model.TerrainTileType">
+    <Position X="13.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAIAAAAAAAAAAAAgAAAAAgAAAACAAAA=</HashCode>
+      <FileName>Model\Actor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BattleCityWpf.Model.Facing">
+    <Position X="12" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABAAQ=</HashCode>
+      <FileName>Model\Facing.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

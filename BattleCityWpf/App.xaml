@@ -1,0 +1,13 @@
+﻿<Application x:Class="BattleCityWpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BattleCityWpf"
+             xmlns:infrastructure="clr-namespace:BattleCityWpf.Infrastructure" Startup="App_OnStartup">
+    <Application.Resources>
+        <ResourceDictionary>
+            <infrastructure:CellToScreenConverter x:Key="CellToScreenConverter"/>
+            <infrastructure:DirectionToMatrixConverter x:Key="DirectionToMatrixConverter"/>
+            <infrastructure:TerrainTileConverter x:Key="TerrainTileConverter"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
